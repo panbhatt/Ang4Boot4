@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'app is working';
+  content = "First thing";
+  private upper : String = "";
+  private lower : String = "";
+
+  catchMe(event){
+    this.upper = event.target.value.toUpperCase();
+    this.lower = event.target.value.toLowerCase();
+
+  }
 }
