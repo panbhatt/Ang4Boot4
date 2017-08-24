@@ -10,10 +10,15 @@ export class AppComponent {
   content = "First thing";
   private upper : String = "";
   private lower : String = "";
+  private showName : Boolean = true ;
 
   catchMe(event){
     this.upper = event.target.value.toUpperCase();
     this.lower = event.target.value.toLowerCase();
 
+  }
+
+  toggleName() {
+    this.showName = !this.showName ; 
   }
 }

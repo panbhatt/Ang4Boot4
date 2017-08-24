@@ -40,5 +40,9 @@
     <router-outlet></router-outlet>
   </div>
 
+  <h1> NG IF demo </h1>
+  <div *ngIf="this.showName">Name : Pankaj Bhatt </div>
+  <button (click) = "this.toggleName()"> Show Name </button>
+
 </div>
 </div>
