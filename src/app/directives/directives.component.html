@@ -5,4 +5,20 @@ Directives module
 <div *ngIf="this.showName">Name : Pankaj Bhatt </div>
 <button (click) = "this.toggleName()"> Show Name </button>
 
+<h3> NG FOr Demo </h3>
+  <ul>
+    <li *ngFor="let name of names; let i = index ; ">{{i}}. {{name}}</li>
+  </ul>
+
+<h3> NG Switch Demo </h3>
+   <select [(ngModel)]="selOption" >
+     <option *ngFor="let opt of options">{{ opt}} </option>
+   </select>
+
+   <div [ngSwitch]="selOption">
+     <div *ngSwitchCase="options[0]">Name is clicked </div>
+     <div *ngSwitchCase="options[1]">Address is clicked </div>
+     <div *ngSwitchCase="options[2]">City is clicked </div>
+
+   </div>
 </div>

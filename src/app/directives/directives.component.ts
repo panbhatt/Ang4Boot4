@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class DirectivesComponent implements OnInit {
 
   private showName : Boolean = true ;
+  private names : String [] = [ 'Ram', 'shyam', 'Pankaj Bhatt'];
+  private selection : String = "Name";
+  private options : String [] = [ "Name", "Address", "City"];
 
   constructor() { }
 
