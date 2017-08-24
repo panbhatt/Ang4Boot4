@@ -13,12 +13,13 @@ import { AppComponent } from './app.component';
 import { SalesComponent} from './sales/sales.component'
 import { SupportComponent} from './support/support.component';
 import { DirectivesComponent} from './directives/directives.component';
+import { HovererDirective} from './directives/hoverer.directive';
 import { SharedComponent} from './shared/shared.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, SalesComponent, SupportComponent, DirectivesComponent
+    AppComponent, SalesComponent, SupportComponent, DirectivesComponent,HovererDirective
   ],
   imports: [
     BrowserModule,
