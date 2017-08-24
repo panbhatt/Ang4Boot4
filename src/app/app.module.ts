@@ -15,11 +15,13 @@ import { SupportComponent} from './support/support.component';
 import { DirectivesComponent} from './directives/directives.component';
 import { HovererDirective} from './directives/hoverer.directive';
 import { SharedComponent} from './shared/shared.component';
+import { CustomComponent} from './customcomponent/customcomponent.component';
+import { CarlistComponent } from './customcomponent/carlist/carlist.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, SalesComponent, SupportComponent, DirectivesComponent,HovererDirective
+    AppComponent, SalesComponent, SupportComponent, DirectivesComponent,HovererDirective,CustomComponent, CarlistComponent
   ],
   imports: [
     BrowserModule,
