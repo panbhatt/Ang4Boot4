@@ -14,6 +14,9 @@ import {
 import {
     SupportComponent
 } from '../support/support.component';
+import {
+    DirectivesComponent
+} from '../directives/directives.component';
 const routes: Routes = [{
         path: 'sales',
         component: SalesComponent
@@ -21,6 +24,10 @@ const routes: Routes = [{
     {
         path: 'support',
         component: SupportComponent
+    },
+    {
+        path: 'directives',
+        component: DirectivesComponent
     },
     {
         path: '**',

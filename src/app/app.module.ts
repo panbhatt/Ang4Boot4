@@ -12,12 +12,13 @@ import { AppComponent } from './app.component';
 
 import { SalesComponent} from './sales/sales.component'
 import { SupportComponent} from './support/support.component';
+import { DirectivesComponent} from './directives/directives.component';
 import { SharedComponent} from './shared/shared.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, SalesComponent, SupportComponent
+    AppComponent, SalesComponent, SupportComponent, DirectivesComponent
   ],
   imports: [
     BrowserModule,

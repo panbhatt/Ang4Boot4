@@ -33,16 +33,15 @@
   <div style="text-align:center">
     <h1> Module Componentization </h1>
 
-    <a [routerLink]="['sales']">Sales </a>
-    <a [routerLink]="['support']">Support </a>
+    <a [routerLink]="['sales']">Sales </a><br/>
+    <a [routerLink]="['support']">Support </a> <br/>
+    <a [routerLink]="['directives']">Directives </a>
 
     <br/><br/>
     <router-outlet></router-outlet>
   </div>
 
-  <h1> NG IF demo </h1>
-  <div *ngIf="this.showName">Name : Pankaj Bhatt </div>
-  <button (click) = "this.toggleName()"> Show Name </button>
+  
 
 </div>
 </div>
