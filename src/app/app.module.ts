@@ -15,14 +15,16 @@ import { SupportComponent} from './support/support.component';
 import { DirectivesComponent} from './directives/directives.component';
 import { HovererDirective} from './directives/hoverer.directive';
 import { SharedComponent} from './shared/shared.component';
-import { CustomComponent} from './customcomponent/customcomponent.component';;
+import { CustomComponent} from './customcomponent/customcomponent.component';
 import { CarlistComponent } from './customcomponent/carlist/carlist.component';
 import { NgInterfacesComponent } from './ng-interfaces/ng-interfaces.component'
+import { OnChangeExComponent } from './ng-interfaces/on-change-ex/on-change-ex.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, SalesComponent, SupportComponent, DirectivesComponent,HovererDirective,CustomComponent, CarlistComponent, NgInterfacesComponent
+    AppComponent, SalesComponent, SupportComponent, DirectivesComponent,HovererDirective,CustomComponent, CarlistComponent, NgInterfacesComponent,
+    OnChangeExComponent
   ],
   imports: [
     BrowserModule,
