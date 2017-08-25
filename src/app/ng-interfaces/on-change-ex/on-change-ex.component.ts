@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'on-change-ex',
@@ -11,7 +11,7 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/cor
   `,
   styles: []
 })
-export class OnChangeExComponent implements OnInit, OnChanges {
+export class OnChangeExComponent implements OnInit, OnChanges , DoCheck{
 
   @Input('name') name ;
   private lsChanges : Array<String> = [] ;
@@ -22,6 +22,11 @@ export class OnChangeExComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes : SimpleChanges) {
-    this.lsChanges.push(JSON.stringify(changes));
+    this.lsChanges.push("NGONCHANGES -> " +JSON.stringify(changes));
+  }
+
+  ngDoCheck(){
+    this.lsChanges.push("ngDoCheck");
+
   }
 }
