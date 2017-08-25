@@ -22,4 +22,8 @@ export class CustomComponent implements OnInit {
   ngOnInit() {
   }
 
+  deleteCar(car : ICar){
+    alert(' Handing in Custom Component. Deleting of Car ' + car.make + " " +car.model + " " + car.year);
+  }
+
 }
