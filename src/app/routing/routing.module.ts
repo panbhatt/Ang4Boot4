@@ -15,7 +15,9 @@ import {
     SupportComponent
 } from '../support/support.component';
 import {     DirectivesComponent } from '../directives/directives.component';
-import {     CustomComponent } from '../customcomponent/customcomponent.component'
+import {     CustomComponent } from '../customcomponent/customcomponent.component';
+import { NgInterfacesComponent } from '../ng-interfaces/ng-interfaces.component';
+
 const routes: Routes = [{
         path: 'sales',
         component: SalesComponent
@@ -31,6 +33,10 @@ const routes: Routes = [{
     {
         path: 'component',
         component: CustomComponent
+    },
+    {
+        path: 'interfaces',
+        component: NgInterfacesComponent
     },
     {
         path: '**',
