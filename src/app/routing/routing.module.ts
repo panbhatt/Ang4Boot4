@@ -24,7 +24,10 @@ const routes: Routes = [{
     },
     {
         path: 'support',
-        component: SupportComponent
+        component: SupportComponent,
+        data : {
+          'message' : ' I m coming from support via data from Router. '
+        }
     },
     {
         path: 'directives',
