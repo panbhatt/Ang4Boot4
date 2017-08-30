@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Data } from '@angular/router';
 
 @Component({
   selector: 'app-support',
@@ -9,11 +9,28 @@ import { ActivatedRoute } from '@angular/router';
 export class SupportComponent implements OnInit {
 
   private errorMsg : String  ;
+  private pathParam : String;
+  private queryParam : Number ;
 
   constructor(route : ActivatedRoute) {
 
     this.errorMsg = route.snapshot.data['message'];
-    alert(this.errorMsg);
+    console.log(this.errorMsg);
+
+
+    route.data.subscribe((data: Data) => { console.log("ROute data = " + data['message'])});
+
+    this.pathParam = route.snapshot.paramMap.get("id");
+
+    console.log("PATH PARAM is " + this.pathParam);
+    // getting path component through the subscribe
+    route.paramMap.subscribe(
+      params => { console.log("This comes from RX_Subscrit part " + params.get("id"))}
+    )
+
+
+
+
   }
 
   ngOnInit() {

@@ -30,6 +30,13 @@ const routes: Routes = [{
         }
     },
     {
+        path: 'support/:id',
+        component: SupportComponent,
+        data : {
+          'message' : ' I m coming from support ID path. '
+        }
+    },
+    {
         path: 'directives',
         component: DirectivesComponent
     },
