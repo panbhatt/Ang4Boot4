@@ -20,6 +20,8 @@ import { CarlistComponent } from './customcomponent/carlist/carlist.component';
 import { NgInterfacesComponent } from './ng-interfaces/ng-interfaces.component'
 import { OnChangeExComponent } from './ng-interfaces/on-change-ex/on-change-ex.component';
 
+import { AuthserviceService } from './authservice.service';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +41,7 @@ import { OnChangeExComponent } from './ng-interfaces/on-change-ex/on-change-ex.c
      { enableTracing: true } // <-- debugging purposes only
    )*/
   ],
-  providers: [],
+  providers: [AuthserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

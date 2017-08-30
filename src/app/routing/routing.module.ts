@@ -17,6 +17,7 @@ import {
 import {     DirectivesComponent } from '../directives/directives.component';
 import {     CustomComponent } from '../customcomponent/customcomponent.component';
 import { NgInterfacesComponent } from '../ng-interfaces/ng-interfaces.component';
+import { AuthserviceService } from '../authservice.service';
 
 const routes: Routes = [{
         path: 'sales',
@@ -35,6 +36,16 @@ const routes: Routes = [{
         data : {
           'message' : ' I m coming from support ID path. '
         }
+    },
+    {
+        path: 'support/protected/route',
+        component: SupportComponent,
+        data : {
+          'message' : ' I m coming from support ID protected path. '
+        },
+        canActivate : [
+          AuthserviceService
+        ]
     },
     {
         path: 'directives',
@@ -57,6 +68,6 @@ const routes: Routes = [{
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule],
-    providers: []
+    providers: [AuthserviceService]
 })
 export class RoutingModule {}
