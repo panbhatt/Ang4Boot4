@@ -1,7 +1,10 @@
 <div>
   <h2> All http Component activities example will be dispalyed here </h2>
   <div>
-    <h3> 1</h3>
+    <h3> Languages List by NGONIT</h3>
+    <ol>
+      <li *ngFor="let l of languages">Name:  {{ l.name }}  &nbsp;&nbsp;&nbsp; Code: {{ l.code }} </li>
+    </ol>
 
   </div>
 </div>

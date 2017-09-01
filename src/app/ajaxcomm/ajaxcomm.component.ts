@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ClientCommunicationService } from './client-communication.service';
+
 @Component({
   selector: 'app-ajaxcomm',
   templateUrl: './ajaxcomm.component.html',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AjaxcommComponent implements OnInit {
 
-  constructor() { }
+  private languages:Array<any> = new Array<any>();
+
+  constructor(private clientService : ClientCommunicationService) {
+
+
+  }
 
   ngOnInit() {
+
+      this.clientService.getLanguages().subscribe(
+        res => {
+          this.languages = res.json();
+        }
+      )
   }
 
 }

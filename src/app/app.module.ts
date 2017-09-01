@@ -21,6 +21,7 @@ import { NgInterfacesComponent } from './ng-interfaces/ng-interfaces.component'
 import { OnChangeExComponent } from './ng-interfaces/on-change-ex/on-change-ex.component';
 
 import { AuthserviceService } from './authservice.service';
+import { ClientCommunicationService} from './ajaxcomm/client-communication.service';
 import { AjaxcommComponent } from './ajaxcomm/ajaxcomm.component';
 
 
@@ -43,7 +44,7 @@ import { AjaxcommComponent } from './ajaxcomm/ajaxcomm.component';
      { enableTracing: true } // <-- debugging purposes only
    )*/
   ],
-  providers: [AuthserviceService],
+  providers: [AuthserviceService, ClientCommunicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
