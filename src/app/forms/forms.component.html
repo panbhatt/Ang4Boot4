@@ -11,14 +11,21 @@
         Form data : {{f.value | json}}
      </form>
 
-  </div>
+  </div><hr/>
   <h2> Reactive Forms </h2>
   <div>
-      
+      `<form #form [formGroup]="formG"  novalidate>
+
+          <label>First Name: <input formControlName="fNameR"/></label><br/>
+          <label>Last Name: <input formControlName="lNameR"/></label> <br/>
+
+          <input type="submit" value="Submit" [disabled]="!formG.valid" (click)="onSubmit(this.formG)"/>
+
+      </form>
 
   </div>
 
-  <hr/>
+
 
 
 </div>
