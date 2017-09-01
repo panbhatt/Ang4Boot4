@@ -18,6 +18,7 @@ import {     DirectivesComponent } from '../directives/directives.component';
 import {     CustomComponent } from '../customcomponent/customcomponent.component';
 import { NgInterfacesComponent } from '../ng-interfaces/ng-interfaces.component';
 import { AjaxcommComponent } from '../ajaxcomm/ajaxcomm.component';
+import { FormsComponent } from '../forms/forms.component';
 
 
 import { AuthserviceService } from '../authservice.service';
@@ -65,6 +66,10 @@ const routes: Routes = [{
     {
         path: 'ajaxhttp',
         component: AjaxcommComponent
+    },
+    {
+        path: 'forms',
+        component: FormsComponent
     },
     {
         path: '**',

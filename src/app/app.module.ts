@@ -23,13 +23,15 @@ import { OnChangeExComponent } from './ng-interfaces/on-change-ex/on-change-ex.c
 import { AuthserviceService } from './authservice.service';
 import { ClientCommunicationService} from './ajaxcomm/client-communication.service';
 import { AjaxcommComponent } from './ajaxcomm/ajaxcomm.component';
+import { FormsComponent } from './forms/forms.component';
 
 
 @NgModule({
   declarations: [
     AppComponent, SalesComponent, SupportComponent, DirectivesComponent,HovererDirective,CustomComponent, CarlistComponent, NgInterfacesComponent,
     OnChangeExComponent,
-    AjaxcommComponent
+    AjaxcommComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
