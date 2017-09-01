@@ -3,12 +3,18 @@
   <h2> Template form </h2>
   <div>
      <form #f="ngForm" novalidate>
-        First Name ::  <input type="text" name="fName" ngModel required> <br/>
+        First Name ::  <input type="text" name="fName" ngModel #fName="ngModel" required> <br/>
         Last name :: <input type="text" name="lName" ngModel required> <br/>
         <br/>
         Form Valid : {{f.valid}} <br/>
+        First Name Valid {{firstNameText.valid}}<br/>
         Form data : {{f.value | json}}
      </form>
+
+  </div>
+  <h2> Reactive Forms </h2>
+  <div>
+      
 
   </div>
 
