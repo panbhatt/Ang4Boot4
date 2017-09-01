@@ -2,9 +2,16 @@
   <h2> All http Component activities example will be dispalyed here </h2>
   <div>
     <h3> Languages List by NGONIT</h3>
+    <button (click)="this.getCitiesList()"> Show Languages </button>
     <ol>
       <li *ngFor="let l of languages">Name:  {{ l.name }}  &nbsp;&nbsp;&nbsp; Code: {{ l.code }} </li>
     </ol>
+
+  </div>
+  <div>
+    <h3> Headers and Param example. </h3>
+    <button (click)="this.getHeadersAndParams()"> Show Languages </button>
+      {{this.headersParamData}}
 
   </div>
 </div>
